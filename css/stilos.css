@@ -1,0 +1,596 @@
+/*Aqui estoy formateando a cero el margin y el pading por preferencia de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    familia de fuentes: 'Merienda', cursiva;
+
+}
+/*En el body hago referencia al tipo de familia que declare arriba*/
+body{
+    background-image: linear-gradient(135deg, #599987, #6cb391, #182b1a);
+}
+
+/*En el head cree mi menu, porque queria que figurara al principio de la pagina, antes que la portada*/
+header{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 1% 0;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #696969;
+    margin: 0 30px;
+    padding: 5px 15px;
+}
+nav a:hover{
+    background-color: #618363;
+    color: #fff;
+}
+
+/*Aplico un margen de 50 px del lado de abajo para separar
+el encabezado del carrusel*/
+
+.encabezado{
+    background-image: url(/imagenes/encabezadoeco.jpg);
+    height: 200px;
+    margin: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+}
+
+#TituloAnimado1{
+    margin-top: 200px;
+    margin-bottom: 30px;
+    width: 600px;
+    height: 100px;
+    animation-name: Titulo1;
+    animation-duration: 4s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Titulo1{
+    0%{background: #12592d; left: 0; top:0;}
+    50%{background: #2d7f33;left: 300px; top:0;}
+    100%{background: #17311d; left: 0; top:0;}
+}
+
+.TituloAnimadoo{
+    color: #ffffff;
+}
+
+/* Creando animacion para el Titulo, primero creo el rectangulo dandole Ancho con Widht y Alto con Height
+Luego creo la animacion y le asigno un nombre con animation-name, establezco la duracion con
+animation-duration, y con animation-iteration-count establezco que se repita de manera infinita*/
+
+#TituloAnimado2{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 600px;
+    height: 100px;
+    animation-name: Titulo2;
+    animation-duration: 4s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-iteration-count: infinite;
+}
+
+/* Con keyframes establezco que tipo de animacion quiero, por ej: al principio de mi animacion le asigno
+un color verde y establezco que mi rectangulo este del lado derecho de la pagina.
+Luego a la mitad de la animacion, osea al 50% cambia el color, y se mueve 300 px a la izquierda
+Y finalizando, al 100% vuelve a cambiar de color y regresa a la posicion inicial*/
+@keyframes Titulo2{
+    0%{background: #12592d; left: 0; top:0;}
+    50%{background: #2d7f33;left: 300px; top:0;}
+    100%{background: #17311d; left: 0; top:0;}
+}
+
+#TituloAnimado3{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 600px;
+    height: 100px;
+    animation-name: Titulo3;
+    animation-duration: 4s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Titulo3{
+    0%{background: #12592d; left: 0; top:0;}
+    50%{background: #2d7f33;left: 300px; top:0;}
+    100%{background: #17311d; left: 0; top:0;}
+}
+
+/* Utilizo line-height para realizar el interlineado*/
+.parrafoArt{
+    line-height: 1.6;
+    font-family: Georgia, serif;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.alinearCentro{
+    justify-content: center;
+}
+
+.box{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
+}
+
+.margenTotal{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.columnaText{
+    display: flex;
+    background-color: azure;
+    padding: 25px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+.slider-frame{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider-frame ul{
+    display: flex;
+    animation: slide 16s infinite alternate ease-in-out;
+    width: 400%;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    55px {margin-left:-200%;}
+    70% {margin-left: -200%;}
+
+    80% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/*Personalizando el formulario*/
+
+.formu{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px, 13px, 37px, #000;
+    }
+    
+.formu h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.formu label {
+    line-height: 40px;
+    color: white;
+}
+
+.formu p {
+    color: white;
+    line-height: 40px;
+}
+
+.formuEntrada {
+    width: 100%;
+    padding: 3px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+}
+
+.formu div{
+    display: flex ;
+    justify-content: space-around;
+}
+
+.formubotton {
+    width: 100px;
+    background: #1f53c5;
+    border: none;
+    padding: 5px;
+    color: white;
+    margin: 16px 0;   
+}
+
+/*Personalizando el pie de pagina*/
+footer{
+    background-image: linear-gradient(rgb(50, 76, 50), rgb(86, 126, 87));
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+    font-family: sans-serif;
+    color: rgb(19, 17, 17);
+    font-size: 15px;
+}
+
+
+/*Creando un media querie para una pantalla de hasta 768px
+equivalente a dispositivos moviles en forma horizontal */
+
+@media(max-width:768px){
+    body{
+        background-image: linear-gradient(135deg, #eb1826, #c11962, #66111a);        
+    }
+
+    nav a{
+        font-size: 13px;
+        margin: 0 15px;
+    }
+    .margenTotal{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .tituloPrimero{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+    
+    #TituloAnimado1{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 80px;
+    }
+    
+    @keyframes Titulo1{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 300px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+    #TituloAnimado2{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 80px;
+    }
+    
+    @keyframes Titulo2{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 300px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+    #TituloAnimado3{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 80px;
+    }
+    
+    @keyframes Titulo3{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 300px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+
+    .columnaText{
+        padding: 2px;
+        margin: 0 1px;
+        
+    }
+    .parrafoArt{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    
+    footer{
+        font-size: 14px;
+        padding: 15px 0px 15px 0px;
+    }
+}
+
+
+/*Creando un media querie para una pantalla de hasta 480px
+equivalente a dispositivos moviles de pantalla pequeña  en forma horizontal*/
+
+
+
+@media (max-width:480px){
+    body{
+        background-image: linear-gradient(135deg, #d2898e, #ec99bd, #eebdc2);        
+    }
+    .encabezado{
+        height: 100px;
+
+    }
+    .encabezado h1{
+        font-size: 15px;
+
+    }
+    nav a{
+        font-size: 12px;
+        margin: 0 15px;
+        padding: 3px 6px;
+    }
+    
+    .margenTotal{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #TituloAnimado1{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 60px;
+        font-size: 11px;
+    }
+
+    @keyframes Titulo1{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 160px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+    #TituloAnimado2{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 60px;
+        font-size: 10px;
+    }
+
+    @keyframes Titulo2{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 160px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+    #TituloAnimado3{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 60px;
+        font-size: 11px;
+    }
+
+    @keyframes Titulo3{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 160px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+    .columnaText{
+        padding: 20px;
+        margin: 0 5px;
+    }
+    
+    .parrafoArt{
+        line-height: 1.6;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    
+    .slider-frame{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+    .formu{
+        width: 300px;
+        padding: 10px; 
+        border-radius: 6px;
+        font-size: 14px;
+        }
+        
+    .formu h4{
+        font-size: 18px;
+    }
+    
+    .formu p {
+        line-height: 20px;
+    }
+    
+    .formuEntrada {
+        font-size: 12px;
+        width: 100%;
+        padding: 3px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .formubotton {
+        width: 100px;
+        margin: 12px 0;   
+    }
+
+    footer{
+        font-size: 12px;
+        padding: 15px 0px 15px 0px;
+    }
+}
+
+@media(max-width: 320px){
+    body{
+        background-image: linear-gradient(135deg, #60aded, #4abdf3, #7cacee);        
+    }
+    .encabezado{
+        height: 80px;
+
+    }
+    .encabezado h1{
+        font-size: 14px;
+
+    }
+    nav a{
+        font-size: 10px;
+        margin: 0 3px;
+        padding: 2px 2px;
+    }
+    
+    .margenTotal{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    #TituloAnimado1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 50px;
+        font-size: 11px;
+    }
+
+    @keyframes Titulo1{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 40px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+
+     #TituloAnimado2{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    @keyframes Titulo2{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 40px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+    
+    #TituloAnimado3{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 50px;
+        font-size: 11px;
+    }
+
+    @keyframes Titulo3{
+        0%{background: #12592d; left: 0; top:0;}
+        50%{background: #2d7f33;left: 50px; top:0;}
+        100%{background: #17311d; left: 0; top:0;}
+    }
+    
+    
+    .columnaText{
+        padding: 2px;
+        margin: 2px 2px;
+    }
+    
+    .parrafoArt{
+        line-height: 1.5;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5x;
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    
+    .slider-frame{
+        height: 300px;
+    }
+
+    .formu{
+        width: 280px;
+        padding: 10px; 
+        border-radius: 6px;
+        font-size: 12px;
+        }
+        
+    .formu h4{
+        font-size: 16px;
+    }
+    
+    .formu p {
+        line-height: 12px;
+    }
+    
+    .formuEntrada {
+        font-size: 10px;
+        width: 100%;
+        padding: 3px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .formubotton {
+        width: 80px;
+        margin: 1px 0;
+        font-size: 10px;   
+    }
+
+    footer{
+        font-size: 10px;
+        padding: 12px 0px 12px 0px;
+    }
+}
+    
+
+
+
+
+
+
+/*Comentarios Adicionales:
+Entiendo que no debo modificar en los media-queries los valores de los 
+slider-frame de mi carrusel de imagenes porque estan espresados en porcentajes.
+Por lo tanto, si yo modifico el margen a traves de .margenTotal (que abarca al margen 
+del carrusel) se ajusta automaticamente al porcentaje del nuevo valor del margen*/
+
+/*Para los diferentes media-queries utilice distintos background-image para ir notando los cambios 
+a medida que iba agrandando o achicando los píxeles de pantalla*/
