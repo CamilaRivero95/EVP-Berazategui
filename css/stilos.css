@@ -7,7 +7,7 @@
 
 /*En el body hago referencia al tipo de familia que declare arriba*/
 body{
-    background-image: url(/imagenes/fondo6.jpg);
+    background-image: url("/imagenes/fondo6.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -42,7 +42,7 @@ nav a:hover{
 /*Aplico un margen de 50 px del lado inferior para separar el encabezado del carrusel*/
 
 .encabezado{
-    background-image: url(/imagenes/beige3.jpg);
+    background-image: url("/imagenes/beige3.jpg");
     height: 200px;
     margin: 0 0 50px;
     display: flex;
@@ -520,6 +520,8 @@ equivalente a dispositivos moviles en forma horizontal */
     .conteinerAll p{
         font-size: 1rem;
     }
+    .texto-oculto{
+        font-size: 1rem;
 
     .informal h3{
         font-size: 17px;
@@ -591,6 +593,9 @@ equivalente a dispositivos moviles de pantalla pequeña  en forma horizontal*/
     .conteinerAll p{
         font-size: 1em;
     }
+    .texto-oculto{
+        font-size: 1rem;
+
 
 /*Ajustando las cards*/
 .card{
