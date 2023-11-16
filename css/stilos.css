@@ -42,7 +42,7 @@ nav a:hover{
 /*Aplico un margen de 50 px del lado inferior para separar el encabezado del carrusel*/
 
 .encabezado{
-    background-image: url("/imagenes/beige3.jpg");
+    background-image: url("./imagenes/beige3.jpg");
     height: 200px;
     margin: 0 0 50px;
     display: flex;
@@ -310,7 +310,7 @@ con el fondo del body*/
     50deg,
     rgb(80, 127, 90) 50%,
     rgba(44, 55, 40, 0.7)),
-    url(imagenes/fondo6.jpg);
+    url(".imagenes/fondo6.jpg");
     padding: 20px;
     margin: auto;
     border-radius: 5px;
