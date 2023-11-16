@@ -183,7 +183,7 @@ background-color: #66111a;
     padding: 40px;
     margin-top: 100px;
     border-top: 6px solid rgb(95, 120, 95);
-    background-image: url("/imagenes/beige3.jpg");
+    background-image: url("../imagenes/beige3.jpg");
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
 }
@@ -310,7 +310,7 @@ con el fondo del body*/
     50deg,
     rgb(80, 127, 90) 50%,
     rgba(44, 55, 40, 0.7)),
-    url("../imagenes/fondo6.jpg");;
+    url("../imagenes/fondo6");;
     padding: 20px;
     margin: auto;
     border-radius: 5px;
