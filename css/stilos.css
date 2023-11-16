@@ -7,7 +7,7 @@
 
 /*En el body hago referencia al tipo de familia que declare arriba*/
 body{
-    background-image: url("/imagenes/fondo6.jpg");
+    background-image: url("../imagenes/fondo6.jpg") ;   
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -42,7 +42,7 @@ nav a:hover{
 /*Aplico un margen de 50 px del lado inferior para separar el encabezado del carrusel*/
 
 .encabezado{
-    background-image: url("./imagenes/beige3.jpg");
+    background-image: url("../imagenes/beige3.jpg");
     height: 200px;
     margin: 0 0 50px;
     display: flex;
@@ -386,7 +386,7 @@ con el fondo del body*/
 
 /*Personalizando el pie de pagina*/
 footer{
-    background-image: url("/imagenes/beige3.jpg");
+    background-image: url("../imagenes/beige3.jpg");
 }
 .contenedor-footer{
     display: flex; 
@@ -489,7 +489,8 @@ footer{
 /*Creando un media querie para una pantalla de hasta 768px
 equivalente a dispositivos moviles en forma horizontal */
 
-@media(max-width:769px){
+@media(max-width:769px) {
+
     nav a{
         font-size: 13px;
         margin: 0 15px;
@@ -522,6 +523,7 @@ equivalente a dispositivos moviles en forma horizontal */
     }
     .texto-oculto{
         font-size: 1rem;
+    }
 
     .informal h3{
         font-size: 17px;
@@ -551,7 +553,6 @@ equivalente a dispositivos moviles en forma horizontal */
     width: 100%;
     margin-top: -40px;
     }
-
 }
 
 
@@ -595,6 +596,7 @@ equivalente a dispositivos moviles de pantalla pequeña  en forma horizontal*/
     }
     .texto-oculto{
         font-size: 1rem;
+    }
 
 
 /*Ajustando las cards*/
@@ -679,7 +681,7 @@ equivalente a dispositivos moviles de pantalla pequeña  en forma horizontal*/
 .nav-manual{
     width: 100%;
     margin-top: -40px;
-    }
+}
 
 .manual-btn{
     border: 2px solid rgb(255, 255, 255);
@@ -703,4 +705,5 @@ equivalente a dispositivos moviles de pantalla pequeña  en forma horizontal*/
 .nav-auto div{
     border: none;
 }
+
 }
