@@ -7,7 +7,7 @@
 
 /*En el body hago referencia al tipo de familia que declare arriba*/
 body{
-    background-image: url("/imagenes/fondo6.jpg") ;   
+    background-image: url("../imagenes/fondo6.jpg");   
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -310,7 +310,7 @@ con el fondo del body*/
     50deg,
     rgb(80, 127, 90) 50%,
     rgba(44, 55, 40, 0.7)),
-    url("imagenes/fondo6.jpg");
+    url("../imagenes/fondo6.jpg");;
     padding: 20px;
     margin: auto;
     border-radius: 5px;
