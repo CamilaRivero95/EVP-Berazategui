@@ -246,7 +246,7 @@ background-color: #66111a;
 .card{
     width: 400px;
     height: 450px;
-    background-image: url("/imagenes/beige3.jpg");
+    background-image: url("../imagenes/beige3.jpg");
     /*background: #d2d8db;*/
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     margin: 20px;
