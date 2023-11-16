@@ -3,18 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    familia de fuentes: 'Merienda', cursiva;
+    }
 
-}
 /*En el body hago referencia al tipo de familia que declare arriba*/
 body{
-    background-image: linear-gradient(135deg, #599987, #6cb391, #182b1a);
+    background-image: url(/imagenes/fondo6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-/*En el head cree mi menu, porque queria que figurara al principio de la pagina, antes que la portada*/
+.margenTotal{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+/*En el header cree mi menu, porque queria que figurara al principio de la pagina, antes que la portada*/
 header{
-    background-color: #f2f2f2;
+    background-color: rgb(41, 53, 36);
     text-align: center;
     padding: 1% 0;
 }
@@ -22,203 +30,308 @@ header{
 nav a{
     display: inline-block;
     text-decoration: none;
-    color: #696969;
+    color: #ffffff;
     margin: 0 30px;
     padding: 5px 15px;
 }
 nav a:hover{
-    background-color: #618363;
+    background-color: #296f2f;
     color: #fff;
 }
 
-/*Aplico un margen de 50 px del lado de abajo para separar
-el encabezado del carrusel*/
+/*Aplico un margen de 50 px del lado inferior para separar el encabezado del carrusel*/
 
 .encabezado{
-    background-image: url(/imagenes/encabezadoeco.jpg);
+    background-image: url(/imagenes/beige3.jpg);
     height: 200px;
     margin: 0 0 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/*Aplico un degradado a los titulos con -webkit y background */
 .encabezado h1{
-    color: #ffffff;
-    font-size: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    background: linear-gradient(90deg, rgb(78, 120, 89), #3f4c3f);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.encabezado h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    background: linear-gradient(90deg, rgb(78, 120, 89), #3f4c3f);
+    color: transparent;
+    -webkit-background-clip: text;
+
 }
 
-#TituloAnimado1{
-    margin-top: 200px;
-    margin-bottom: 30px;
-    width: 600px;
-    height: 100px;
-    animation-name: Titulo1;
-    animation-duration: 4s;
-    position: relative;
+/*Creando el slide manual/automatico*/
+
+/*Genero contenedor apra ubicar al slide en el centro de la pantalla*/
+.conteiner-slide{
     display: flex;
-    align-items: center;
     justify-content: center;
-    animation-iteration-count: infinite;
+    align-content: center;
 }
 
-@keyframes Titulo1{
-    0%{background: #12592d; left: 0; top:0;}
-    50%{background: #2d7f33;left: 300px; top:0;}
-    100%{background: #17311d; left: 0; top:0;}
-}
-
-.TituloAnimadoo{
-    color: #ffffff;
-}
-
-/* Creando animacion para el Titulo, primero creo el rectangulo dandole Ancho con Widht y Alto con Height
-Luego creo la animacion y le asigno un nombre con animation-name, establezco la duracion con
-animation-duration, y con animation-iteration-count establezco que se repita de manera infinita*/
-
-#TituloAnimado2{
-    margin-top: 80px;
-    margin-bottom: 30px;
-    width: 600px;
-    height: 100px;
-    animation-name: Titulo2;
-    animation-duration: 4s;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-iteration-count: infinite;
-}
-
-/* Con keyframes establezco que tipo de animacion quiero, por ej: al principio de mi animacion le asigno
-un color verde y establezco que mi rectangulo este del lado derecho de la pagina.
-Luego a la mitad de la animacion, osea al 50% cambia el color, y se mueve 300 px a la izquierda
-Y finalizando, al 100% vuelve a cambiar de color y regresa a la posicion inicial*/
-@keyframes Titulo2{
-    0%{background: #12592d; left: 0; top:0;}
-    50%{background: #2d7f33;left: 300px; top:0;}
-    100%{background: #17311d; left: 0; top:0;}
-}
-
-#TituloAnimado3{
-    margin-top: 80px;
-    margin-bottom: 30px;
-    width: 600px;
-    height: 100px;
-    animation-name: Titulo3;
-    animation-duration: 4s;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-iteration-count: infinite;
-}
-
-@keyframes Titulo3{
-    0%{background: #12592d; left: 0; top:0;}
-    50%{background: #2d7f33;left: 300px; top:0;}
-    100%{background: #17311d; left: 0; top:0;}
-}
-
-/* Utilizo line-height para realizar el interlineado*/
-.parrafoArt{
-    line-height: 1.6;
-    font-family: Georgia, serif;
-    margin-left: 50px;
-    margin-right: 60px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 20px;
-}
-
-.alinearCentro{
-    justify-content: center;
-}
-
-.box{
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
-}
-
-.margenTotal{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.columnaText{
-    display: flex;
-    background-color: azure;
-    padding: 25px;
-    margin: 0 10px;
-    text-align: center;
-}
-
-
-.slider-frame{
-    width: 100%;
-    height: 600px;
+.slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-.slider-frame ul{
+.slides{
+    width: 500%;
+    height: 500px;
     display: flex;
-    animation: slide 16s infinite alternate ease-in-out;
-    width: 400%;
 }
 
-.slider-frame li{
-    list-style: none;
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1000px;
+    height: 500px;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    }
+
+.manual-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: rgb(14, 99, 64);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.nav-auto{
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: 460px;
+
+}
+
+.nav-auto div{
+    border: none
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+background-color: #511166;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #66111a;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+background-color: #66111a;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4{
+background-color: #66111a;
+}
+
+
+/*Personalizando seccion de ubicación*/
+
+.conteinerAll{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 100px;
+    border-top: 6px solid rgb(95, 120, 95);
+    background-image: url("/imagenes/beige3.jpg");
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+.conteinerAll h2{
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+.conteinerAll img{
+    width: 500px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.conteinerAll p{
+    font-size: 22px;
+    color: #454545;   
+    margin-top: 15px;
+}
+
+/*cuando el cursor se posiciona encima del boton cambia de flecha a manito*/
+.conteinerAll button{
+    margin-top: 16px;
+    padding: 6px;
+    background-color:transparent;
+    color:#000000;
+    border: 2px solid;
+    border-radius: 3px;
+    transition: all 400ms ease;
+}
+
+/* Cuando el cursor se posiciona encima del boton cambia de color el fondo y la letra*/
+.conteinerAll button:hover{
+    background: #1e6d7b;
+    color: #fff;
+}
+
+.texto-oculto{
+    color: #454545;
+    font-size: 22px;
+    margin-top: 15px;
+    display: none;
+}
+
+/* show es para usarlo en java*/
+.show{
+    display: block;
+}
+
+
+/* Creando las Cards*/
+.contenedorCards{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card{
+    width: 400px;
+    height: 450px;
+    background-image: url("/imagenes/beige3.jpg");
+    /*background: #d2d8db;*/
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    padding: 8px;
+    border-top: 3px solid rgb(95, 120, 95);
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+.card img{
     width: 100%;
+    height: 210px;
+}
+.contenidoCard{
+    padding: 16px;
+}
+.contenidoCard h3{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.contenidoCard p{
+    font-size: 16px;
+    line-height: 1.2;
+    color:#535353;
+}
+.contenidoCard a{
+    text-decoration: none;
+    margin-top: 16px;
+    display: inline-block;
+    padding: 6px;
+    color: #292a29;
+    border: 1px solid;
+    border-radius: 3px;
+    transition: all 400ms ease;
+}
+.contenidoCard a:hover{
+    background: #1e6d7b;
+    color: #fff;
 }
 
-.slider-frame img{
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    55px {margin-left:-200%;}
-    70% {margin-left: -200%;}
-
-    80% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
 
 /*Personalizando el formulario*/
 
+/* Aplicando un background + url para que el formulario se camufle 
+con el fondo del body*/
 .formu{
-    width: 400px;
-    background: #24303c;
-    padding: 30px;
+    max-width: 600px;
+    width: 450px;
+    height: 700px;
+    max-height: 800px;
+    background: linear-gradient(
+    50deg,
+    rgb(80, 127, 90) 50%,
+    rgba(44, 55, 40, 0.7)),
+    url(imagenes/fondo6.jpg);
+    padding: 20px;
     margin: auto;
-    margin top: 100px;
-    border-radius: 4px;
-    box-shadow: 7px, 13px, 37px, #000;
+    border-radius: 5px;
+    box-shadow: 6px, 13px, 37px, #000;
     }
     
 .formu h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
     text-align: center;
 }
 
 .formu label {
-    line-height: 40px;
-    color: white;
+    line-height: 30px;
+    color: #ffffff;
 }
 
 .formu p {
-    color: white;
-    line-height: 40px;
+    color:#454545;
+    line-height: 30px;
 }
 
 .formuEntrada {
@@ -226,18 +339,45 @@ Y finalizando, al 100% vuelve a cambiar de color y regresa a la posicion inicial
     padding: 3px;
     border-radius: 6px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-size: 18px;
+    border: 2px solid rgb(111, 62, 37);
+    font-size: 12px;
 }
 
-.formu div{
+.formuEntradaLargo {
+    width: 100%;
+    height: 200px;
+    padding: 3px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 2px solid rgb(111, 62, 37);
+    font-size: 12px;
+}
+
+.enviar-borrar{
     display: flex ;
     justify-content: space-around;
 }
+.enviar-borrar input{
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 400ms ease;
+}
 
+.enviar-borrar input:hover{
+    background: #1e6d7b;
+    color: #fff;
+}
+.si-no{
+    display: flex ;
+    justify-content: start;
+}
+.si-no label{
+    margin-right: 20px;
+    margin-left: 20px;
+}
 .formubotton {
     width: 100px;
-    background: #1f53c5;
+    background: #483e33;
     border: none;
     padding: 5px;
     color: white;
@@ -246,23 +386,110 @@ Y finalizando, al 100% vuelve a cambiar de color y regresa a la posicion inicial
 
 /*Personalizando el pie de pagina*/
 footer{
-    background-image: linear-gradient(rgb(50, 76, 50), rgb(86, 126, 87));
-    text-align: center;
-    padding: 40px 0px 40px 0px;
-    font-family: sans-serif;
-    color: rgb(19, 17, 17);
-    font-size: 15px;
+    background-image: url("/imagenes/beige3.jpg");
+}
+.contenedor-footer{
+    display: flex; 
+    justify-content: space-around;
 }
 
+.informal h3{
+    color: #417e88;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+.informal h4{
+    color: #4d4e4d;
+    text-align: center;    
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.informal p{
+    color: #4d4e4d;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.contenido-footer h3{
+    color: #417e88;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.contenido-footer p{
+    color: #4d4e4d;
+    text-align: center;
+    width: 190px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.contenido-footer ul{
+    text-align: center;
+}
+
+.contenido-footer li{
+    list-style-type: none;
+    position: relative;
+}
+
+/*Creo efecto de linea cuando me posiciono sobre el icono*/
+.contenido-footer li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:100%;
+    width: 0;
+    height: 2px;
+    background: #661128;
+    transition-duration: 3s;
+}
+
+/*Especifico el largo de la linea que aparece cuando me posiciono sobre el boton*/
+.contenedor-footer li:hover::before{
+    width: 40px;
+}
+
+.iconos{
+    text-align: center;
+    padding: 0;
+}
+
+.iconos li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.iconos i{
+    color: rgb(90, 87, 87);
+    font-size: 25px;
+}
+
+.derechos-reservados{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.derechos-reservados p{
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
 /*Creando un media querie para una pantalla de hasta 768px
 equivalente a dispositivos moviles en forma horizontal */
 
-@media(max-width:768px){
-    body{
-        background-image: linear-gradient(135deg, #eb1826, #c11962, #66111a);        
-    }
-
+@media(max-width:769px){
     nav a{
         font-size: 13px;
         margin: 0 15px;
@@ -276,65 +503,53 @@ equivalente a dispositivos moviles en forma horizontal */
         margin-top: 10px;
         margin-bottom: 80px;
     }
-    
-    #TituloAnimado1{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        width: 400px;
-        height: 80px;
+
+    .conteinerAll{
+        width: 90%;
+        padding: 10px;
     }
     
-    @keyframes Titulo1{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 300px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
+    .conteinerAll h2{
+        margin-left: 20%;
     }
 
-    #TituloAnimado2{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        width: 400px;
-        height: 80px;
+    .conteinerAll img{
+        width: 60%;
     }
     
-    @keyframes Titulo2{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 300px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
+    .conteinerAll p{
+        font-size: 1rem;
     }
 
-    #TituloAnimado3{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        width: 400px;
-        height: 80px;
+    .informal h3{
+        font-size: 17px;
     }
     
-    @keyframes Titulo3{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 300px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
+    .informal h4{
+        font-size: 16px;
     }
 
-
-    .columnaText{
-        padding: 2px;
-        margin: 0 1px;
-        
+    .contenido-footer h3{
+        font-size: 17px;
     }
-    .parrafoArt{
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
-
     
-    footer{
-        font-size: 14px;
-        padding: 15px 0px 15px 0px;
+    .contenido-footer p{
+        font-size: 15px;
     }
+    
+    .contenedor-footer li{
+        padding: 3px;
+    }
+    
+    .botton-bar{
+        padding: 5px;
+    }
+    
+    .nav-manual{
+    width: 100%;
+    margin-top: -40px;
+    }
+
 }
 
 
@@ -344,253 +559,143 @@ equivalente a dispositivos moviles de pantalla pequeña  en forma horizontal*/
 
 
 @media (max-width:480px){
-    body{
-        background-image: linear-gradient(135deg, #d2898e, #ec99bd, #eebdc2);        
-    }
-    .encabezado{
-        height: 100px;
 
-    }
-    .encabezado h1{
-        font-size: 15px;
-
-    }
     nav a{
         font-size: 12px;
-        margin: 0 15px;
-        padding: 3px 6px;
+        margin: 0 8px;
     }
-    
     .margenTotal{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    #TituloAnimado1{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        width: 250px;
-        height: 60px;
-        font-size: 11px;
-    }
-
-    @keyframes Titulo1{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 160px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
-    }
-
-    #TituloAnimado2{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        width: 250px;
-        height: 60px;
-        font-size: 10px;
-    }
-
-    @keyframes Titulo2{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 160px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
-    }
-
-    #TituloAnimado3{
-        margin-top: 100px;
-        margin-bottom: 30px;
-        width: 250px;
-        height: 60px;
-        font-size: 11px;
-    }
-
-    @keyframes Titulo3{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 160px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
-    }
-
-    .columnaText{
-        padding: 20px;
-        margin: 0 5px;
-    }
-    
-    .parrafoArt{
-        line-height: 1.6;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 10px;
-    }
-    
-    .slider-frame{
-        width: 100%;
-        height: 250px;
-        overflow: hidden;
-    }
-    .formu{
-        width: 300px;
-        padding: 10px; 
-        border-radius: 6px;
-        font-size: 14px;
-        }
-        
-    .formu h4{
-        font-size: 18px;
-    }
-    
-    .formu p {
-        line-height: 20px;
-    }
-    
-    .formuEntrada {
-        font-size: 12px;
-        width: 100%;
-        padding: 3px;
-        border-radius: 6px;
-        margin-bottom: 10px;
-    }
-
-    .formubotton {
-        width: 100px;
-        margin: 12px 0;   
-    }
-
-    footer{
-        font-size: 12px;
-        padding: 15px 0px 15px 0px;
-    }
-}
-
-@media(max-width: 320px){
-    body{
-        background-image: linear-gradient(135deg, #60aded, #4abdf3, #7cacee);        
-    }
-    .encabezado{
-        height: 80px;
-
+        margin-left: 6px;
+        margin-right: 6px;
     }
     .encabezado h1{
-        font-size: 14px;
-
+        font-size: 1em;
     }
-    nav a{
-        font-size: 10px;
-        margin: 0 3px;
-        padding: 2px 2px;
-    }
-    
-    .margenTotal{
-        margin-left: 3px;
-        margin-right: 3px;
+    .encabezado h2{
+        font-size: 1em;
     }
 
-    #TituloAnimado1{
-        margin-top: 50px;
-        margin-bottom: 30px;
-        width: 250px;
-        height: 50px;
-        font-size: 11px;
-    }
-
-    @keyframes Titulo1{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 40px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
-    }
-
-     #TituloAnimado2{
-        margin-top: 50px;
-        margin-bottom: 30px;
-        width: 250px;
-        height: 50px;
-        font-size: 10px;
-    }
-
-    @keyframes Titulo2{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 40px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
-    }
-    
-    #TituloAnimado3{
-        margin-top: 50px;
-        margin-bottom: 30px;
-        width: 250px;
-        height: 50px;
-        font-size: 11px;
-    }
-
-    @keyframes Titulo3{
-        0%{background: #12592d; left: 0; top:0;}
-        50%{background: #2d7f33;left: 50px; top:0;}
-        100%{background: #17311d; left: 0; top:0;}
-    }
-    
-    
-    .columnaText{
-        padding: 2px;
-        margin: 2px 2px;
-    }
-    
-    .parrafoArt{
-        line-height: 1.5;
-        margin-left: 2px;
-        margin-right: 2px;
-        margin-top: 5x;
-        margin-bottom: 5px;
-        font-size: 10px;
-    }
-    
-    .slider-frame{
-        height: 300px;
-    }
-
-    .formu{
-        width: 280px;
-        padding: 10px; 
-        border-radius: 6px;
-        font-size: 12px;
-        }
-        
-    .formu h4{
-        font-size: 16px;
-    }
-    
-    .formu p {
-        line-height: 12px;
-    }
-    
-    .formuEntrada {
-        font-size: 10px;
+    .conteinerAll{
         width: 100%;
-        padding: 3px;
-        border-radius: 6px;
-        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .conteinerAll h2{
+        margin-left: 15%;
     }
 
-    .formubotton {
-        width: 80px;
-        margin: 1px 0;
-        font-size: 10px;   
+    .conteinerAll img{
+        width: 100%;
+    }
+    
+    .conteinerAll p{
+        font-size: 1em;
     }
 
-    footer{
-        font-size: 10px;
-        padding: 12px 0px 12px 0px;
-    }
+/*Ajustando las cards*/
+.card{
+    margin: 10px;
+    padding: 6px;
+}
+
+.contenidoCard{
+    padding: 10px;
+}
+
+.contenidoCard p{
+    font-size: 14px;
+    line-height: 1.2;
+}
+.contenidoCard a{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/*Ajustando formulario*/
+.formu{
+    width: 100%;
+    height: 600px;
+    padding: 15px;
+}
+
+.formu h4{
+    font-size: 18px;
+}
+
+.formu label{
+    line-height: 25px;
+}
+
+.formuEntradaLargo{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 12px;
+}
+
+.formubotton {
+    margin: 0;   
+}
+
+/*Ajustando footer*/
+.informal h3{
+    font-size: 15px;
 }
     
+.informal h4{
+    font-size: 12px;
+}
+.contenido-footer h3{
+    font-size: 15px;
+}
+.contenido-footer p{
+    font-size: 12px;
+}
 
+.contenedor-footer li{
+    padding: 3px;
+}
 
+/*ajutando el slider*/
 
+.slider{
+    width: 100%;
+    height: 300px;
+}
 
+.slides{
+    height: 300px;
+}
 
+.slide img{
+    width: 100%;
+    height: 300px;
+}
 
-/*Comentarios Adicionales:
-Entiendo que no debo modificar en los media-queries los valores de los 
-slider-frame de mi carrusel de imagenes porque estan espresados en porcentajes.
-Por lo tanto, si yo modifico el margen a traves de .margenTotal (que abarca al margen 
-del carrusel) se ajusta automaticamente al porcentaje del nuevo valor del margen*/
+.nav-manual{
+    width: 100%;
+    margin-top: -40px;
+    }
 
-/*Para los diferentes media-queries utilice distintos background-image para ir notando los cambios 
-a medida que iba agrandando o achicando los píxeles de pantalla*/
+.manual-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: rgb(14, 99, 64);
+}
+
+.nav-auto{
+    color: transparent;
+    width: 100%;
+}
+
+.nav-auto div{
+    border: none;
+}
+}
